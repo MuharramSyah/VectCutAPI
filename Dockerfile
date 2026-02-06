@@ -24,7 +24,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application
 COPY . .
-
+COPY config.json.example config.json
 # Expose API port (default is 9001)
 EXPOSE 9001
 
